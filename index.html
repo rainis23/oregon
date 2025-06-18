@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biogrāfija un CV priekš Reiņa Jāņa Brenča ">
+    <title>Reinis Jānis Brencis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Biogrāfija</h2>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="tab-link active" data-tab="sakums">Sākums</a></li>
+            <li><a href="#" class="tab-link" data-tab="Darbi">Darbi</a></li>
+            <li><a href="#" class="tab-link" data-tab="Personīgie Sasniegumi">Personīgie Sasniegumi</a></li>
+            <li><a href="#" class="tab-link" data-tab="kontakti">Kontakti</a></li>
+        </ul>
+    </nav>
+    <div id="sakums" class="tab-content">
+        <div class="welcome-message">Sākums</div>
+        <div class="welcome-description">
+        <p>Mani sauc Reinis Jānis Brencis. Mācos programēšanu lietojot dažādas valodas, sportoju kā ari mācos finanses.
+            Šī mājaslapa būs kā mans CV, kurā būs informācija par mani, maniem darbiem un personīgajiem sasniegumiem.</p>
+        <p>Darbi sadaļā redzēsiet manus programēšanas projektus un analīzes finansiālos tirgos.</p>
+        <p>Personīgie sasniegumi sadaļā būs informācija par maniem sporta sasniegumiem un citiem personīgajiem mērķiem.</p>
+        <p>Kontakti sadaļā būs ievietots mans Instagram profils, kurā varat sazināties ar mani un sekot man, ja tas protams interesē.</p>
+        </div>
+    </div>
+    <div id="Darbi" class="tab-content" style="display:none;">
+        <div class="trading-title">Trading:</div>
+        <div class="trading-flex-row">
+            <div class="info-card">
+                Šeit ir daži no maniem treidiem, un rezultāti no tiem. Zilajā krāsā ir profits, utt. Vēl mācos, bet lēnām sāk iet.
+            </div>
+            <div>
+                <div class="image-row">
+                    <img src="image/IMG_3020.png" alt="Trading Image">
+                    <img src="image/IMG_3227.png" alt="Trading Image">
+                    <img src="image/IMG_3372.png" alt="Trading Image">
+                </div>
+                <div class="image-row-wide">
+                    <img src="image/Screenshot 2025-06-17 195353.png" alt="profits">
+                </div>
+            </div>
+        </div>
+        <div class="programming-title">Programēšana:</div>
+        <div class="programming-flex-row">
+            <div class="info-card">
+                Šī ir mana ēdiena pasūtīšanas saite, kurā var izvēleties ko tu iegādajies, pievienot to grozam un pasūtīt Links ir šeit: https://rainis23.github.io/P2-2-WEB/.
+            </div>
+            <div>
+                <div class="image-row">
+                    <img src="image/Screenshot 2025-06-17 211959.png" alt="Programēšanas projekts">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Personīgie Sasniegumi" class="tab-content" style="display:none;">
+    <div class="personal-achievements-flex-row">
+        <div class="personal-achievements-text">
+            <div class="personal-achievements-title">Personīgie Sasniegumi:</div>
+            <div class="personal-achievements-desc">
+                Šobrītējais physique, kā arī Personālie rekordi:<br>
+                <ul>
+                    <li>Bench - 120kg</li>
+                    <li>Deadlift - 180kg</li>
+                    <li>Overhead Press - 80kg</li>
+                </ul>
+                Līdz 2025. beigām goal:
+                <ul>
+                    <li>Bench - 140kg</li>
+                    <li>Deadlift - 200kg</li>
+                    <li>Overhead Press - 100kg</li>
+                </ul>
+            </div>
+        </div>
+        <div class="achievements-images-row">
+            <img src="image/IMG_3267.jpg" alt="Personīgie sasniegumi" class="personal-achievements-image">
+            <img src="image/IMG_3472.jpg" alt="Personīgie sasniegumi" class="personal-achievements-image">
+        </div>
+    </div>
+    </div>
+    <div id="kontakti" class="tab-content" style="display:none;">
+        <div class="contact-title">Sazinies ar mani:</div>
+        <form class="contact-form" action="https://formspree.io/f/mldnlnvw" method="POST">
+            <label for="name">Vārds:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-pasts:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ziņa:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Sūtīt</button>
+        </form>
+        <div class="social-links">
+             <a href="https://www.instagram.com/r.brenciss/" target="_blank" title="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Reinis Jānis Brencis</p>
+    </footer>
+</body>
+</html>
